@@ -15,6 +15,7 @@ const scrollTo = (id) => {
     <!-- Glow Background Orbs -->
    
     <div class="v2-glow-orb orb-gold"></div>
+    <div class="v2-glow-orb orb-gold"></div>
 
     <div class="container">
       <div class="v2-hero-grid">
@@ -51,6 +52,10 @@ const scrollTo = (id) => {
               <span>View Programs</span>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </button>
+            <button class="v2-btn v2-btn-glass" @click="scrollTo('partnerships')">
+              <span>Explore Partnerships</span>
+              <i class="fa-solid fa-user-astronaut"></i>
+            </button>
           </div>
 
           <!-- Metrics Row -->
@@ -78,30 +83,7 @@ const scrollTo = (id) => {
         </div>
 
         <!-- Visual Crest Column -->
-        <div class="v2-hero-visual">
-          <div class="v2-cyber-card">
-            <div class="cyber-corner tr"></div>
-            <div class="cyber-corner bl"></div>
-            
-            <div class="v2-logo-display">
-              <img :src="ccsLogo" alt="CCS Logo" class="v2-ccs-crest" />
-            </div>
-
-            <div class="v2-tech-pills">
-              <span class="tech-pill"><i class="fa-solid fa-code"></i> Software Eng.</span>
-              <span class="tech-pill"><i class="fa-solid fa-brain"></i> AI & Data</span>
-              <span class="tech-pill"><i class="fa-solid fa-vr-cardboard"></i> Digital Media</span>
-            </div>
-
-            <div class="v2-cpu-seal-bar">
-              <img :src="cpuLogo" alt="CPU Seal" class="v2-seal-img" />
-              <div class="seal-info">
-                <span class="seal-motto">Scientia et Fides</span>
-                <span class="seal-univ">Central Philippine University</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
